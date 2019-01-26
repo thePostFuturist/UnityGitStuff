@@ -1,0 +1,82 @@
+
+First, download Git and Git LFS
+
+	https://git-scm.com/downloads
+
+	https://git-lfs.github.com/ OR https://help.github.com/articles/installing-git-large-file-storage/#platform-mac
+
+Set your name so people will know who made the changes, along with your email
+
+	git config --global user.name "FIRST_NAME LAST_NAME"
+
+	git config --global user.email "MY_NAME@example.com"
+
+
+Git will ask you for your password every single time, so let's store it in our keychain:
+
+Mac:
+
+	git config --global credential.helper osxkeychain
+
+Windows
+
+	git config --global credential.helper wincred
+
+
+To start a new repo:
+
+	git init
+
+we specify where we want our repo hosted and giving it a name
+
+	git remote add origin "URL"
+
+Let's see what's in our repo
+
+	git status
+
+Let's add things:
+
+	git add "file"
+
+to add everything, use
+
+	git add . 
+
+git commit -m "initial commit"
+
+	git push origin master
+
+To download a repo from a server:
+
+	git clone
+
+11. merge conflicts:
+
+materials
+scenes
+meshes
+textures
+audio files
+etc
+
+when you do get a merge conflict upon a pull
+
+see what's causing a conflict
+
+checkout your files one by one
+	
+	git log
+
+	git checkout SHA "file"
+
+use git diff in your IDE
+
+then add, commit, push
+
+
+FUBAR? Not quite.
+
+	git reset --hard head
+	git reset --hard SHA
+	git checkout SHA "file"
