@@ -49,7 +49,20 @@ git commit -m "initial commit"
 
 To download a repo from a server:
 
-	git clone
+	git clone < git repo >
+
+	git lfs pull
+
+To download only a branch from a server repo:
+
+git clone --single-branch --branch <branchname> <git repo>
+
+To download a branch when you've already downloaded the repo:
+
+git checkout -b newlocalbranchname origin/branch-name
+
+
+To download 
 
 11. merge conflicts:
 
